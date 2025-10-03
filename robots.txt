@@ -28,3 +28,9 @@ Allow: /
 
 User-agent: Twitterbot
 Allow: /
+
+User-agent: LineBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
