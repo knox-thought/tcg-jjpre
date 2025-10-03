@@ -4,11 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="language" content="th">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>ตรวจการ์ด TCG จากญี่ปุ่น – TCG JJPre Protect</title>
 
   <meta name="description" content="บริการตรวจการ์ด TCG จาก Mercari ญี่ปุ่น ตรวจสอบด้วยกล้องจุลทรรศน์และ Blue Light มั่นใจก่อนกดรับสินค้า">
+  <meta name="keywords" content="ตรวจการ์ด TCG, Mercari ญี่ปุ่น, การ์ดเกม, กล้องจุลทรรศน์, Blue Light, ตรวจสอบการ์ด, สั่งซื้อจากญี่ปุ่น, TCG authentic">
   <meta name="robots" content="index,follow">
+  <meta name="author" content="TCG JJPre Protect">
   <meta name="theme-color" content="#000000">
+  <meta name="geo.region" content="TH">
+  <meta name="geo.placename" content="Thailand">
+  <meta name="distribution" content="global">
+  <meta name="rating" content="general">
+  <meta name="revisit-after" content="7 days">
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://tcg.jjprealljapan.com/">
@@ -17,6 +26,9 @@
   <meta property="og:title" content="ตรวจการ์ด TCG จากญี่ปุ่น – TCG JJPre Protect">
   <meta property="og:description" content="บริการตรวจการ์ด TCG จาก Mercari ญี่ปุ่น ตรวจสอบด้วยกล้องจุลทรรศน์และ Blue Light มั่นใจก่อนกดรับสินค้า">
   <meta property="og:image" content="https://tcg.jjprealljapan.com/images/tcg-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="TCG JJPre Protect - บริการตรวจการ์ด TCG จากญี่ปุ่น">
   <meta property="og:url" content="https://tcg.jjprealljapan.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="TCG JJPre Protect">
@@ -24,10 +36,19 @@
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@JJPreJapan">
+  <meta name="twitter:creator" content="@JJPreJapan">
   <meta name="twitter:title" content="ตรวจการ์ด TCG จากญี่ปุ่น – TCG JJPre Protect">
   <meta name="twitter:description" content="บริการตรวจการ์ด TCG จาก Mercari ญี่ปุ่น ตรวจสอบด้วยกล้องจุลทรรศน์และ Blue Light มั่นใจก่อนกดรับสินค้า">
   <meta name="twitter:image" content="https://tcg.jjprealljapan.com/images/tcg-og.png">
+  <meta name="twitter:image:alt" content="TCG JJPre Protect - บริการตรวจการ์ด TCG จากญี่ปุ่น">
 
+  <!-- DNS Prefetch for external resources -->
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  <link rel="dns-prefetch" href="//connect.facebook.net">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +62,10 @@
 
   <!-- CSS -->
   <link rel="preload" as="image" href="images/logos/tcg-logo-nobg.png">
-  <link rel="stylesheet" href="style.css?v=4" />
+  <link rel="preload" as="image" href="images/tcg-og.png">
+  <link rel="preload" as="image" href="images/component/PSA-1.webp">
+  <link rel="preload" href="style.css?v=4" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="style.css?v=4"></noscript>
 
   <!-- Structured Data - Service -->
   <script type="application/ld+json">
@@ -49,17 +73,39 @@
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "TCG JJPre Protect",
+    "alternateName": "ตรวจการ์ด TCG จากญี่ปุ่น",
     "description": "บริการตรวจการ์ด TCG จาก Mercari ญี่ปุ่น ตรวจสอบด้วยกล้องจุลทรรศน์และ Blue Light มั่นใจก่อนกดรับสินค้า",
     "provider": {
       "@type": "Organization",
-      "name": "JJPre",
+      "name": "JJPre Japan",
+      "alternateName": "TCG JJPre Protect",
       "logo": "https://tcg.jjprealljapan.com/images/logos/tcg-logo.png",
-      "url": "https://tcg.jjprealljapan.com/"
+      "url": "https://tcg.jjprealljapan.com/",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+66991654242",
+        "contactType": "customer service",
+        "availableLanguage": "Thai"
+      },
+      "sameAs": [
+        "https://www.facebook.com/JJPreJapan"
+      ]
     },
     "image": "https://tcg.jjprealljapan.com/images/tcg-og.png",
     "url": "https://tcg.jjprealljapan.com/",
-    "serviceArea": "Thailand",
-    "availableLanguage": "Thai"
+    "serviceArea": {
+      "@type": "Country",
+      "name": "Thailand"
+    },
+    "availableLanguage": "Thai",
+    "category": "Authentication Service",
+    "serviceType": "TCG Card Verification",
+    "offers": {
+      "@type": "Offer",
+      "price": "390",
+      "priceCurrency": "THB",
+      "description": "ค่าบริการตรวจการ์ดเริ่มต้นที่ 390 บาท รวมค่าขนส่งฟรี"
+    }
   }
   </script>
 
@@ -109,8 +155,8 @@
     <div class="hero-background"></div>
     <div class="hero-container">
       <div class="hero-content">
-        <h1 class="hero-title">บริการตรวจสอบการ์ด(TCG)จากญี่ปุ่นก่อนส่งกลับไทย</h1>
-        <p class="hero-subtitle">หลักฐานรูปถ่าย/วิดีโอจากกล้องจุลทรรศน์ + Blue Light ให้คุณมั่นใจก่อนกดรับสินค้า</p>
+        <h1 class="hero-title">บริการตรวจสอบการ์ด TCG จากญี่ปุ่น ก่อนส่งกลับไทย - ปลอดภัย มั่นใจ 100%</h1>
+        <p class="hero-subtitle">หลักฐานรูปถ่าย/วิดีโอจากกล้องจุลทรรศน์ + Blue Light ให้คุณมั่นใจก่อนกดรับสินค้า จาก Mercari, PayPay และแพลตฟอร์มญี่ปุ่น</p>
         
         <div class="hero-cta">
           <div class="contact-buttons">
@@ -133,11 +179,11 @@
       <!-- Hero Card Showcase (Responsive Grid) -->
       <div class="hero-showcase" aria-hidden="true">
         <div class="card-grid">
-          <div class="card-frame"><img src="images/component/PSA-1.webp" alt="การ์ด TCG ตัวอย่างการตรวจสอบด้วยกล้องจุลทรรศน์" class="card-media" loading="eager" decoding="async" fetchpriority="high"></div>
-          <div class="card-frame"><img src="images/component/PSA-2.webp" alt="การ์ด TCG ตัวอย่างการตรวจสอบด้วยกล้องจุลทรรศน์" class="card-media" loading="lazy" decoding="async"></div>
-          <div class="card-frame"><img src="images/component/PSA-3.webp" alt="การ์ด TCG ตัวอย่างการตรวจสอบด้วยกล้องจุลทรรศน์" class="card-media" loading="lazy" decoding="async"></div>
-          <div class="card-frame"><img src="images/component/PSA-4.webp" alt="การ์ด TCG ตัวอย่างการตรวจสอบด้วยกล้องจุลทรรศน์" class="card-media" loading="lazy" decoding="async"></div>
-          <div class="card-frame"><img src="images/component/PSA-5.webp" alt="การ์ด TCG ตัวอย่างการตรวจสอบด้วยกล้องจุลทรรศน์" class="card-media" loading="lazy" decoding="async"></div>
+          <div class="card-frame"><img src="images/component/PSA-1.webp" alt="การ์ด TCG PSA Grade ตัวอย่างการตรวจสอบด้วยกล้องจุลทรรศน์ TCG JJPre Protect" class="card-media" loading="eager" decoding="async" fetchpriority="high"></div>
+          <div class="card-frame"><img src="images/component/PSA-2.webp" alt="การ์ด TCG เกรดสูง ตัวอย่างการตรวจสอบคุณภาพด้วยอุปกรณ์มาตรฐาน" class="card-media" loading="lazy" decoding="async"></div>
+          <div class="card-frame"><img src="images/component/PSA-3.webp" alt="การ์ดเกม TCG ตัวอย่างการตรวจสอบความแท้ด้วย Blue Light Test" class="card-media" loading="lazy" decoding="async"></div>
+          <div class="card-frame"><img src="images/component/PSA-4.webp" alt="การ์ด TCG ตัวอย่างการตรวจสอบจากญี่ปุ่น ก่อนส่งกลับไทย" class="card-media" loading="lazy" decoding="async"></div>
+          <div class="card-frame"><img src="images/component/PSA-5.webp" alt="การ์ด TCG Mercari ญี่ปุ่น ตัวอย่างการตรวจสอบด้วยกล้องจุลทรรศน์" class="card-media" loading="lazy" decoding="async"></div>
         </div>
       </div>
       <!-- End Hero Card Showcase -->
@@ -145,11 +191,11 @@
       <!-- Hand Fan Showcase -->
       <div class="hero-fan" aria-hidden="true">
         <div class="fan-hand">
-          <div class="fan-card"><img src="images/component/PSA-6.webp" alt="การ์ด TCG ตัวอย่างการตรวจสอบ" decoding="async"></div>
-          <div class="fan-card"><img src="images/component/PSA-7.webp" alt="การ์ด TCG ตัวอย่างการตรวจสอบ" decoding="async"></div>
-          <div class="fan-card"><img src="images/component/PSA-8.webp" alt="การ์ด TCG ตัวอย่างการตรวจสอบ" decoding="async"></div>
-          <div class="fan-card"><img src="images/component/PSA-9.webp" alt="การ์ด TCG ตัวอย่างการตรวจสอบ" decoding="async"></div>
-          <div class="fan-card"><img src="images/component/PSA-10.webp" alt="การ์ด TCG ตัวอย่างการตรวจสอบ" decoding="async"></div>
+          <div class="fan-card"><img src="images/component/PSA-6.webp" alt="การ์ด TCG เกรดสูง ตัวอย่างการตรวจสอบคุณภาพจากญี่ปุ่น" decoding="async"></div>
+          <div class="fan-card"><img src="images/component/PSA-7.webp" alt="การ์ดเกม TCG ตัวอย่างการตรวจสอบด้วยกล้องจุลทรรศน์" decoding="async"></div>
+          <div class="fan-card"><img src="images/component/PSA-8.webp" alt="การ์ด TCG ตัวอย่างการตรวจสอบความแท้ด้วย Blue Light" decoding="async"></div>
+          <div class="fan-card"><img src="images/component/PSA-9.webp" alt="การ์ด TCG PSA Grade ตัวอย่างการตรวจสอบก่อนส่งกลับไทย" decoding="async"></div>
+          <div class="fan-card"><img src="images/component/PSA-10.webp" alt="การ์ด TCG Mercari ญี่ปุ่น ตัวอย่างการตรวจสอบด้วยอุปกรณ์มาตรฐาน" decoding="async"></div>
         </div>
       </div>
       <!-- End Hand Fan Showcase -->
@@ -163,9 +209,9 @@
       <div class="section-header">
         <div class="section-title-container">
           <img src="images/logos/tcg-logo-nobg.png" alt="โลโก้ TCG JJPre Protect" class="section-logo" loading="lazy" width="136" height="136">
-          <h2 class="section-title">ขั้นตอนการตรวจ</h2>
+          <h2 class="section-title">ขั้นตอนการตรวจการ์ด TCG จากญี่ปุ่น - ง่าย รวดเร็ว มั่นใจ</h2>
         </div>
-        <p class="section-subtitle">กระบวนการตรวจสอบที่เรียบง่ายและรวดเร็ว</p>
+        <p class="section-subtitle">กระบวนการตรวจสอบที่เรียบง่ายและรวดเร็ว ด้วยอุปกรณ์มาตรฐานระดับมืออาชีพ</p>
       </div>
       
       <div class="steps-grid">
@@ -269,11 +315,11 @@
           <h3 class="report-section-title">ภาพด้านหน้าและด้านหลังการ์ด</h3>
           <div class="report-gallery report-gallery-main">
             <div class="report-item">
-              <img src="images/review/FRONT.png" alt="ด้านหน้าการ์ด TCG" loading="lazy" class="report-img">
+              <img src="images/review/FRONT.png" alt="ภาพด้านหน้าการ์ด TCG ตัวอย่างรายงานการตรวจสอบด้วยกล้องจุลทรรศน์" loading="lazy" class="report-img">
               <p class="report-label">ด้านหน้า (Front)</p>
             </div>
             <div class="report-item">
-              <img src="images/review/BACK.png" alt="ด้านหลังการ์ด TCG" loading="lazy" class="report-img">
+              <img src="images/review/BACK.png" alt="ภาพด้านหลังการ์ด TCG ตัวอย่างรายงานการตรวจสอบคุณภาพ" loading="lazy" class="report-img">
               <p class="report-label">ด้านหลัง (Back)</p>
             </div>
           </div>

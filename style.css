@@ -566,8 +566,9 @@ section {
 
 .section-title-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 20px;
   margin-bottom: 20px;
   position: relative;
@@ -583,20 +584,20 @@ section {
 }
 
 .section-title-container .section-title {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
+  position: static;
+  transform: none;
+  width: auto;
   z-index: 2;
+  text-align: center;
 }
 
 .section-logo {
   width: 136px;
   height: 136px;
   opacity: 1.0;
-  margin-top: 0;
-  margin-left: 136px;
+  margin: 0 auto 20px auto;
   z-index: 1;
+  order: -1;
 }
 
 .section-subtitle {
@@ -666,7 +667,7 @@ section {
   right: 0;
   width: 40px;
   height: 40px;
-  background: var(--primary-color);
+  background: var(--secondary-color);
   color: var(--white);
   border-radius: 50%;
   display: flex;
@@ -719,15 +720,15 @@ section {
 
 .report-tab:hover {
   background: var(--gray-100);
-  border-color: var(--primary-color);
-  color: var(--primary-color);
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
 
 .report-tab.active {
-  background: var(--primary-color);
-  border-color: var(--primary-color);
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
   color: var(--white);
   box-shadow: var(--shadow-lg);
 }
@@ -1441,6 +1442,7 @@ section {
   .fan-card {
     width: clamp(150px, 24vw, 220px);
   }
+  /* Keep mobile layout for tablets and below */
   .section-title-container {
     flex-direction: column;
     align-items: center;
@@ -1454,8 +1456,8 @@ section {
     text-align: center;
   }
   .section-logo {
-    margin-left: 0;
-    margin-bottom: 12px;
+    margin: 0 auto 12px auto;
+    order: -1;
   }
   .card-grid .card-frame:nth-child(1) { --offset-x: -24px; --rot: -2.4deg; }
   .card-grid .card-frame:nth-child(2) { --offset-x: -8px;  --rot: -1.6deg; }
