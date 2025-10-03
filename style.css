@@ -799,7 +799,6 @@ section {
 .report-gallery-sides {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: start;
-  grid-auto-rows: 1fr;
 }
 
 .report-gallery-light {
@@ -822,7 +821,6 @@ section {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 .report-item:hover {
@@ -841,9 +839,8 @@ section {
   border-radius: var(--border-radius-md);
   display: block;
   transition: var(--transition);
-  flex: 1;
-  object-fit: cover;
-  max-height: 250px;
+  object-fit: contain;
+  max-height: 300px;
 }
 
 .report-item:hover .report-img {
