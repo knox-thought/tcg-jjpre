@@ -1173,6 +1173,56 @@ section {
   box-shadow: var(--shadow-lg);
 }
 
+/* Special Offer Styling */
+.terms-item.special-offer {
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  color: var(--gray-700);
+  position: relative;
+  overflow: hidden;
+}
+
+.terms-item.special-offer::before {
+  content: 'SPECIAL';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--warning-color);
+  color: var(--white);
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.terms-item.special-offer .terms-icon {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.terms-item.special-offer .terms-heading {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--dark-color);
+}
+
+.terms-item.special-offer p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--gray-700);
+}
+
+.terms-item.special-offer p strong {
+  color: var(--warning-color);
+  font-weight: 700;
+}
+
+.terms-item.special-offer:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
 .problem-title,
 .solution-title {
   font-size: 1.75rem;
@@ -1798,6 +1848,12 @@ section {
   }
   .terms-item .terms-icon {
     margin: 0 auto;
+  }
+  .terms-item.special-offer::before {
+    top: 8px;
+    right: 8px;
+    font-size: 0.7rem;
+    padding: 3px 6px;
   }
 }
 
