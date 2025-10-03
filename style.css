@@ -798,6 +798,8 @@ section {
 
 .report-gallery-sides {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: start;
+  grid-auto-rows: 1fr;
 }
 
 .report-gallery-light {
@@ -818,6 +820,9 @@ section {
   transition: var(--transition);
   cursor: pointer;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .report-item:hover {
@@ -836,6 +841,9 @@ section {
   border-radius: var(--border-radius-md);
   display: block;
   transition: var(--transition);
+  flex: 1;
+  object-fit: cover;
+  max-height: 250px;
 }
 
 .report-item:hover .report-img {
@@ -848,6 +856,7 @@ section {
   font-weight: 600;
   color: var(--gray-700);
   text-align: center;
+  flex-shrink: 0;
 }
 
 /* Video in Report Item */
